@@ -25,3 +25,10 @@ img {
 img:hover {
   transform: rotate(540deg); 
 }
+h1 {
+  
+}
+
+h {
+  display: flex;
+}
