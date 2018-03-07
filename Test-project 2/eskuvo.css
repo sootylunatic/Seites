@@ -1,0 +1,288 @@
+* {
+    box-sizing: border-box;
+}
+
+/*direct margin*/
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+
+main, header {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  color: #444349;
+}
+
+h1, h2 {
+  font-family: 'Great Vibes', cursive;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-family:  Muli ;
+}
+
+.location, .program, .gif, .qanda, .contact, .wrapper2 {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+/*header*/
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center;
+  background-size: cover;
+  display: table;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: 'Libre Baskerville' , serif ;
+}
+
+.wrapper1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.darkbox {
+  background: hsla(100,0%,0%,.6);
+  color: hsla(0,0%,100%,.8);
+  padding: 0.8rem;
+  margin: 0 auto;
+}
+
+.tagline {
+  letter-spacing: .15rem;
+  font-size: 1.23rem;
+}
+
+.tagline::after {
+  content: "";
+  display: block;
+  background-color: #fff;
+  height: 1px;
+  width: 12.50rem;
+  margin: 0.5rem auto;
+}
+
+.headline {
+  font-size: 3.2rem;
+  color: #d2ba87;
+  margin-bottom: 0
+}
+
+.date {
+  letter-spacing: .16rem;
+  font-size: 1rem;
+}
+
+.date::before, .date::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #fff;
+  width: 1.5rem;
+  height: 1px;
+  margin: 0 0.5rem;
+}
+
+/*desk header*/
+@media screen and (min-width:765px) {
+
+  .tagline {
+  text-transform: uppercase;
+  font-size: 1.rem;
+  }
+
+  .headline {
+   font-size: 6.7rem;
+  }
+  
+  .date {
+   font-size: 1.17rem;
+  }
+  
+  .darkbox {
+    width: 55%;
+  }
+}
+
+/*section loctaion*/
+
+.location img {
+  height: 7.5rem;
+}
+
+.lock1 div {
+  font-family: Muli ;
+}
+
+.lock1::after {
+  content: "";
+  display: block;
+  background-color: black;
+  width: 6.5rem;
+  height: 2px;
+  margin: 1.5rem auto;
+}
+
+/*desk.*/
+
+@media screen and (min-width:765px) {
+  .lock1::after {
+    display: none;
+  }
+  
+  .lock1 {
+    display: inline-block;
+    width: 30%;
+  }
+}
+
+/*program*/
+.program{
+  background-color: hsla(100,0%,0%,.6);
+  width: 100%;
+  color: #d2ba87;
+}
+
+.program ul {
+  text-align: left;
+  letter-spacing: .025rem;
+}
+
+.tagline2 {
+  text-align: left;
+  font-size: 1rem;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width:765px) {
+
+  .program div{
+     width: 30%;
+     margin: 1rem auto;
+  }
+
+}
+
+/*gif*/
+
+.gif img {
+  height: 7.5rem;
+  margin: 1.5rem;
+}
+
+/*qanda*/
+
+.qanda {
+  background-color: hsla(100,0%,0%,.6);
+  width: 100%;
+  color: #d2ba87;
+}
+
+.qblock {
+  width: 90%;
+}
+
+.qblock p {
+  text-align: left;
+}
+
+.quest {
+  font-weight: 700;
+  margin-bottom: 0.5rem
+}
+
+.answer {
+  margin-bottom: 1.5rem;
+}
+
+.qblock::after {
+  content: "";
+  display: block;
+  background-color: #d2ba87;
+  width: 12.5rem;
+  height: 2.5px;
+  margin: 1.5rem auto;
+}
+
+@media screen and (min-width:765px) {
+  .qblock::after {
+    display: none;
+  }
+  
+  .qblock {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+  
+  .qblock h3 {
+    text-align: left;
+  }
+}
+
+.contact {
+  margin-bottom: 0;
+}
+
+/*footer*/
+
+footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #606060;
+  color: #fff;
+  font-family: 'Muli', sans-serif;
+  display: table;
+  text-align: center;
+  font-size: .875rem;
+}
+
+.wrapper2 {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+}
+
+footer p {
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+@media (min-width: 768px) {
+
+  footer {
+    min-height: 7vh;
+  }
+
+}
